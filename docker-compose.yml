@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  proxy-npm-uri:
+    restart: always
+    image: proxy-npm-uri
+    build: ./
+    container_name: proxy-npm-uri
+    ports:
+      - 80:4000
